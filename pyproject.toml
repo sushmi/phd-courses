@@ -1,0 +1,15 @@
+[project]
+name = "bi"
+version = "0.1.0"
+description = "Business intelligence and data analysis"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+# 1. Config to run app in src
+[project.scripts]
+bi = "main:main"
+
+# 2. folders related to uv
+[tool.uv]
+package = true

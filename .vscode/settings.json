@@ -1,0 +1,28 @@
+{
+    // File type associations to enable run button action from editor according to .latexmkrc file
+    "files.associations": {
+        ".latexmkrc": "perl" // Recognize .latexmkrc as Perl file (not PowerShell)
+    },
+    // LaTeX Workshop: Define build tools - let .latexmkrc control compilation
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "%DOC%"
+            ]
+        }
+    ],
+    // LaTeX Workshop: Define build recipes (sequences of tools)
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk", // Recipe name
+            "tools": [
+                "latexmk"
+            ] // Use the latexmk tool defined above
+        }
+    ],
+    // LaTeX Workshop: PDF viewer settings
+    "latex-workshop.view.pdf.viewer": "tab", // Open PDF in VS Code tab
+    "latex-workshop.synctex.afterBuild.enabled": true // Auto-sync after build
+}
